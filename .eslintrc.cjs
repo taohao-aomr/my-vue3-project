@@ -30,11 +30,12 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest',
+    requireConfigFile: false,
     parser: '@babel/eslint-parser',
     sourceType: 'module',
   },
   plugins: [
-    '@babel/eslint-parser',
+    // '@babel/eslint-parser',
     'vue',
     // 2. 加入 prettier 的 eslint 插件
     'prettier',
