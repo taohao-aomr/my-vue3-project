@@ -3,7 +3,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true,
+    node: true
   },
   extends: [
     'eslint:recommended',
@@ -15,24 +15,24 @@ module.exports = {
     // 1. 接入 prettier 的规则
     'prettier',
     'plugin:prettier/recommended',
-    'vue-global-api',
+    'vue-global-api'
   ],
   overrides: [
     {
       env: {
-        node: true,
+        node: true
       },
       files: ['.eslintrc.{js}'],
       parserOptions: {
-        sourceType: 'script',
-      },
-    },
+        sourceType: 'script'
+      }
+    }
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     requireConfigFile: false,
     parser: '@babel/eslint-parser',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: [
     // '@babel/eslint-parser',
@@ -40,7 +40,7 @@ module.exports = {
     // 2. 加入 prettier 的 eslint 插件
     'prettier',
     // eslint-import-resolver-typescript 插件，@see https://www.npmjs.com/package/eslint-import-resolver-typescript
-    'import',
+    'import'
   ],
   rules: {
     // 3. 注意要加上这一句，开启 prettier 自动修复的功能
@@ -51,7 +51,7 @@ module.exports = {
     'import/extensions': [
       'error',
       'ignorePackages',
-      { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' },
+      { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }
     ],
     // 只允许1个默认导出，关闭，否则不能随意export xxx
     'import/prefer-default-export': ['off'],
@@ -63,16 +63,16 @@ module.exports = {
     'no-plusplus': 'off',
     'no-shadow': 'off',
     'vue/multi-word-component-names': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-explicit-any': 'off'
   },
   // eslint-import-resolver-typescript 插件，@see https://www.npmjs.com/package/eslint-import-resolver-typescript
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
+      '@typescript-eslint/parser': ['.ts', '.tsx']
     },
     'import/resolver': {
-      typescript: {},
-    },
+      typescript: {}
+    }
   },
   globals: {
     uni: true,
@@ -82,7 +82,6 @@ module.exports = {
     getCurrentPages: true,
     UniHelper: true,
     Page: true,
-    App: true,
-  },
+    App: true
+  }
 }
-
