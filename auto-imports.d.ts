@@ -88,6 +88,7 @@ declare global {
   const useAttrs: typeof import('vue')['useAttrs']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
+  const useRequest: typeof import('@/api')['useRequest']
   const useSlots: typeof import('vue')['useSlots']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
